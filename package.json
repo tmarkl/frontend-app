@@ -1,0 +1,16 @@
+{
+  "name": "frontend",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "format": "prettier --trailing-comma es5 --single-quote --write 'packages/*/*.js' 'packages/*/!(node_modules)/**/*.js'",
+    "prepare": "cd packages/cbmms-weapp-libs && yarn build"
+  },
+  "devDependencies": {
+    "prettier": "^1.17.0"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "my-admin",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "https://tmall.crystalbeauty.cn",
+  "scripts": {
+    "start": "REACT_ENV=dev PORT=2167 react-scripts start",
+    "build": "REACT_ENV=dev react-scripts build",
+    "slate": "rm -rf node_modules && yarn install"
+  },
+  "dependencies": {
+    "query-string": "^6.11.1",
+    "react": "16.9.0",
+    "react-dom": "16.9.0",
+    "react-router-dom": "5.1.2",
+    "@frontend/core": "0.1.0",
+    "@frontend/react": "0.1.0"
+  },
+  "devDependencies": {
+    "@frontend/react-scripts": "0.1.0"
+  },
+  "browserslist": [
+    ">1%",
+    "last 4 versions",
+    "Firefox ESR",
+    "not ie < 11"
+  ]
+}
