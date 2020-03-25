@@ -7,12 +7,15 @@ export default function(options = {}) {
     let url = options.url || "";
     const init = {
       headers: { Accept: "application/json" },
-      credentials: "include"
+      credentials: "include",
+      method: "GET"
     };
     if (url.indexOf("://") === -1) {
       url = orgin + url;
     }
-    init.method = (method && method.toUpperCase()) || "GET";
+    if (method) {
+      init.method = method.toUpperCase();
+    }
     if (init.method === "GET") {
       if (data) {
         url = stringiLocation({ pathname: url, searchData: data });

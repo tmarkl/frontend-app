@@ -2,7 +2,7 @@ import initCore from "@frontend/core";
 import initReact from "@frontend/react";
 import rootReducer from "../reducers";
 import rootSaga from "../sagas";
-import app from "./app";
+import { app, httpFetch } from "common-ui";
 
 const env = {
   debug: process.env.REACT_APP_DEBUG === "1",
@@ -31,8 +31,7 @@ const coreOptions = {
 export default function initApp(options) {
   Object.assign(app, initCore(coreOptions));
   Object.assign(app, initReact(app));
-
   return Promise.resolve()
-    .then(() => Object.assign(app, options, { env }))
-    .then(() => app.store.runSaga);
+    .then(() => Object.assign(app, options, { httpFetch, env }))
+    .then(() => app.store.runSaga());
 }

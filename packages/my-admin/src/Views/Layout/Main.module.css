@@ -1,0 +1,135 @@
+html {
+  -ms-overflow-style: none;
+  overflow-y: hidden;
+}
+
+.wrapper {
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  background: #ffffff;
+}
+
+.headerContent {
+  display: block;
+  flex: 1;
+  padding: 0 16px;
+  height: 44px;
+  line-height: 44px;
+  text-align: right;
+}
+
+.trigger {
+  display: block;
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  cursor: pointer;
+  color: #1890ff;
+  background-color: transparent;
+  text-decoration: none;
+  outline: none;
+  transition: color 0.3s;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: none no-repeat 0 0 / 30px 30px;
+}
+ar .own {
+  display: inline-block;
+  height: 24px;
+  font-size: 12px;
+  line-height: 24px;
+  vertical-align: middle;
+}
+
+.content {
+  padding: 0 16px 24px;
+}
+
+.breadcrumb {
+  padding: 16px 0;
+}
+
+.logo {
+  font-size: 28px;
+  color: #ffffff;
+  text-align: center;
+  margin: 20px 0 20px 0;
+}
+
+.size14 {
+  font-size: 14px;
+}
+
+.buttonLink {
+  cursor: pointer;
+  color: #1890ff;
+  background-color: transparent;
+  text-decoration: none;
+  outline: none;
+  transition: color 0.3s;
+}
+
+.buttonLink:hover {
+  color: #40a9ff;
+}
+
+:global(.ant-modal) {
+  justify-content: center;
+}
+
+/* 隐藏左侧Tab滚动条 */
+:global(.ant-layout-sider-children) {
+  display: flex;
+  flex-direction: column;
+}
+
+:global(.ant-menu-root) {
+  overflow-y: auto;
+}
+
+:global(.ant-menu-root::-webkit-scrollbar) {
+  width: 0px;
+  background: transparent;
+}
+
+/* 上传图片样式 */
+:global(.ant-upload-list-picture-card) {
+  width: 100%;
+}
+
+:global(.ant-upload.ant-upload-select-picture-card) {
+  width: 100%;
+}
+
+:global(.ant-upload-list-picture-card .ant-upload-list-item) {
+  width: 100%;
+  min-width: 104px;
+  min-height: 104px;
+}
+
+:global(.ant-upload-list-item-info span) {
+  height: 100%;
+}
+
+:global(.ant-upload-list-item-thumbnail img) {
+  object-fit: contain;
+}
+
+:global(.ant-table-header-column) {
+  width: 100%;
+}
+
+:global(.ant-table-column-sorters) {
+  width: 100%;
+}

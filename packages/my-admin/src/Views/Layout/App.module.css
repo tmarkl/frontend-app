@@ -1,0 +1,21 @@
+html,
+body,
+:global(#root) {
+  height: 100%;
+}
+
+body {
+  font-family: "Helvetica Neue For Number", -apple-system, BlinkMacSystemFont,
+    Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body * {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  min-width: 960px;
+  height: 100%;
+}

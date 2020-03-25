@@ -1,0 +1,9 @@
+.daterange {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.daterange :global(.ant-radio-group) {
+  margin-left: 16px;
+}

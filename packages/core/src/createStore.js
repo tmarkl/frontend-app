@@ -6,6 +6,7 @@ export default function(options = {}) {
   const { preloadedState, rootReducer, rootSaga, debug } = options;
   const sagaMiddleware = createSagaMiddleware();
   const middlewares = [sagaMiddleware];
+
   if (debug) {
     middlewares.push(logger);
   }
@@ -15,7 +16,10 @@ export default function(options = {}) {
     preloadedState,
     applyMiddleware(...middlewares)
   );
-  store.runSaga = () => sagaMiddleware.run(rootSaga);
+
+  store.runSaga = () => {
+    sagaMiddleware.run(rootSaga);
+  };
 
   return store;
 }

@@ -1,0 +1,14 @@
+:global(.ant-table-thead) > tr > th {
+  font-weight: bold;
+  color: #909399;
+}
+
+:global(.ant-table) {
+  color: #606266;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 16px;
+}

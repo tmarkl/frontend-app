@@ -11,3 +11,10 @@ export function launchCompletion(error, own) {
     own
   };
 }
+
+export function fetchError(error) {
+  return {
+    type: "FETCH_ERROR",
+    error
+  };
+}
